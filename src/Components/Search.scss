@@ -1,0 +1,41 @@
+form{
+    display: flex;
+    position: relative;
+    color:#939EB0;
+    border: 1px solid #667489;
+    padding: 15px 12px;
+    max-width: 370px;
+    border-radius: 8px;
+    background-color: #4A5464;
+    button{
+        background-color: #4A5464;
+        border:none;
+        color:#939EB0;
+        cursor: pointer;
+    }
+    input{
+        background-color: #4A5464;
+        border: none;
+        flex-grow: 1;
+    }
+
+    input:focus {
+        border-bottom: 1px solid #939EB0;
+        outline:none;
+      }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #939EB0;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: r#939EB0;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #939EB0;
+      }
+
+    
+}

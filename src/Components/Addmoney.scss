@@ -1,0 +1,44 @@
+footer .modal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal-wrapper {
+        position: relative;
+        min-width: 600px;
+        border-radius: 5px;
+        padding: 100px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #DBDFEA;
+        h4 {
+            color: rgba(0, 0, 0, 0.781);
+            font-size: 30px;
+        }
+    }
+    
+    .close {
+        font-size: 35px;
+        position:absolute;
+        top:0;
+        right:5px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.781);
+    }
+
+
+    input {
+        margin-bottom: 40px;
+        font-size: 30px;
+        padding: 10px;
+        border: none;
+        color: rgba(0, 0, 0, 0.781);
+    }
+}

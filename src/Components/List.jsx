@@ -1,8 +1,8 @@
 import './List.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
-import { faCircleMinus } from '@fortawesome/free-solid-svg-icons';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faMinus } from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { faArrowsUpDown } from '@fortawesome/free-solid-svg-icons';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
@@ -76,14 +76,14 @@ export default function List({ accounts, setDeleteModalData, setDeleteData, setA
                                             <div className="account-surname">{c.Surname}</div>
                                             <div className="account-balance">{(c.Balance/100).toFixed(2) + ' €' }</div>
                                             <div className="buttons">
-                                                <span className='add' style={{display:'inline-block'}} onClick={_ => plus(c)}><FontAwesomeIcon icon={faCirclePlus} /></span>
-                                                <span className='minus' style={{display:'inline-block'}} onClick={_ => minus(c)}><FontAwesomeIcon icon={faCircleMinus} /></span>
-                                                <span className='delete' style={{display:'inline-block'}} onClick={_ => destroy(c)}><FontAwesomeIcon icon={faTrash} /></span>
+                                                <span className='add' onClick={_ => plus(c)}><FontAwesomeIcon icon={faPlus} /></span>
+                                                <span className='minus' onClick={_ => minus(c)}><FontAwesomeIcon icon={faMinus} /></span>
+                                                <span className='delete' onClick={_ => destroy(c)}><FontAwesomeIcon icon={faTrashCan} /></span>
                                             </div>
                                         </div>
                                     </li>: null
                                 ))
-                            : 'No accounts yet'
+                            : 'Sąskaitų nėra'
                         : '...loading'
                 }
             </ul>
